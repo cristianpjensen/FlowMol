@@ -20,8 +20,10 @@ where = ["."]
 include = ["flowmol*"]
 
 [tool.setuptools.package-data]
-"*" = ["*.pt", "*.pth", "*.ckpt", "*.yml", "*.yaml", "*.json"]
-flowmol = ["trained_models/**/*", "data/**/*"]
+flowmol = ["trained_models/**/*"]
+
+[tool.setuptools.data-files]
+"data/geom" = ["data/geom/*.pt"]
 
 [tool.setuptools]
 include-package-data = true

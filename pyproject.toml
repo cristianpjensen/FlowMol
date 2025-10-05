@@ -1,3 +1,4 @@
+
 [project]
 name = "flowmol"
 version = "0.1"
@@ -6,7 +7,14 @@ description = "Flow matching for 3D de novo molecule generation"
 authors = [
     { name = "Ian Dunn", email = "ian.dunn@pitt.edu" }
 ]
+dependencies = [
+    "pytorch-lightning",
+]
 
 [build-system]
 requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["flowmol*"]

@@ -73,12 +73,12 @@ class FlowMol(pl.LightningModule):
         if self.target_blur < 0.0:
             raise ValueError('target_blur must be non-negative')
         
-        # if provided filepath to data dir does not exist, assume it is relative to the repo root
+        # if provided filepath to data dir does not exist, assume it is in flowmol/
         processed_data_dir = Path(self.marginal_dists_file).parent
         if not processed_data_dir.exists():
-            repo_root = Path(__file__).parent.parent.parent
-            self.marginal_dists_file = repo_root / self.marginal_dists_file
-            self.n_atoms_hist_file = repo_root / self.n_atoms_hist_file
+            src_root = Path(__file__).parent.parent
+            self.marginal_dists_file = src_root / self.marginal_dists_file
+            self.n_atoms_hist_file = src_root / self.n_atoms_hist_file
 
         # do some boring stuff regarding the prior distribution
         self.configure_prior()

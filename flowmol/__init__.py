@@ -37,8 +37,8 @@ def load_pretrained(model_name: str) -> FlowMol:
         download_remote_model_dir(model_dir)
 
     if 'qm9' in model_name:
-        marginal_dists_file = Path(__file__).parent.parent / 'data' / 'qm9' / 'train_data_marginal_dists.pt'
-        n_atoms_hist_file = Path(__file__).parent.parent / 'data' / 'qm9' / 'train_data_n_atoms_histogram.pt'
+        marginal_dists_file = Path(__file__).parent / 'data' / 'qm9' / 'train_data_marginal_dists.pt'
+        n_atoms_hist_file = Path(__file__).parent / 'data' / 'qm9' / 'train_data_n_atoms_histogram.pt'
         load_kwargs = {'marginal_dists_file': marginal_dists_file, 'n_atoms_hist_file': n_atoms_hist_file}
     else:
         load_kwargs = {}

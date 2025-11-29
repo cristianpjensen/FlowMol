@@ -1,7 +1,7 @@
 
 [project]
 name = "flowmol"
-version = "0.1.1"
+version = "0.1.2"
 requires-python = ">=3.10,<3.11"
 description = "Flow matching for 3D de novo molecule generation"
 authors = [

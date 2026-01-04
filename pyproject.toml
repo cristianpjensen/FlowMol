@@ -2,7 +2,7 @@
 [project]
 name = "flowmol"
 version = "0.1.2"
-requires-python = ">=3.10,<3.11"
+requires-python = ">=3.10,<3.12"
 description = "Flow matching for 3D de novo molecule generation"
 authors = [
     { name = "Ian Dunn", email = "ian.dunn@pitt.edu" }

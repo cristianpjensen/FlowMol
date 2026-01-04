@@ -11,7 +11,7 @@ dependencies = [
     "pytorch-lightning>=2.0.0",
     "torch-scatter>=2.1.2",
     "torch-cluster>=1.6.3",
-    "useful_rdkit_utils==0.80",
+    "useful-rdkit-utils==0.80",
     "py3Dmol",
     "einops",
     "wandb",

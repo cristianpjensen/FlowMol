@@ -9,7 +9,7 @@ authors = [
 ]
 dependencies = [
     "pytorch-lightning>=2.0.0",
-    "pip install useful-rdkit-utils==0.3.12",
+    "useful-rdkit-utils==0.3.12",
     "py3Dmol",
     "einops",
     "wandb",
